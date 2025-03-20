@@ -30,7 +30,7 @@ PRODUCTS_SERVICE_URL = os.getenv(
 
 @app.get("/healthz", status_code=201)
 async def health():
-    return {"message": "Hi Mom!"}
+    return {"message": "Hello from Api Gateway service!"}
 
 
 protected_routes = ["/api/v1/orders/create", "/api/v1/payments"]
